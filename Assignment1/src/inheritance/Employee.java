@@ -1,3 +1,5 @@
+package inheritance;
+
 public abstract class Employee {
     protected String firstName;
     protected String lastName;

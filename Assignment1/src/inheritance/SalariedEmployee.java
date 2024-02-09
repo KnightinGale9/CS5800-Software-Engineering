@@ -1,3 +1,5 @@
+package inheritance;
+
 public class SalariedEmployee extends Employee{
     protected int weeklySalary;
     public SalariedEmployee(String firstName, String lastName, String socialSecurityNumber) {

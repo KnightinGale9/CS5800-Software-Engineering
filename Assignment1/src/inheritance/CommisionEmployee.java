@@ -1,3 +1,5 @@
+package inheritance;
+
 public class CommisionEmployee extends Employee{
     protected double commissionRate;
     protected int grossSalary;
