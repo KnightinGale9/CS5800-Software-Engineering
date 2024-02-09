@@ -1,4 +1,4 @@
-package inheritance;
+package Inheritance;
 
 public class CommisionEmployee extends Employee{
     protected double commissionRate;

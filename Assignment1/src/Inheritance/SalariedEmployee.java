@@ -1,4 +1,4 @@
-package inheritance;
+package Inheritance;
 
 public class SalariedEmployee extends Employee{
     protected int weeklySalary;

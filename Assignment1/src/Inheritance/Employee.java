@@ -1,4 +1,4 @@
-package inheritance;
+package Inheritance;
 
 public abstract class Employee {
     protected String firstName;
