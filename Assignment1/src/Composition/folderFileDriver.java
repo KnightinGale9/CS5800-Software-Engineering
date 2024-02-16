@@ -22,11 +22,11 @@ public class folderFileDriver {
         demo1.getIndividualFolder(0).getIndividualFolder(3).addToFileList(".htaccess");
         demo1.getIndividualFolder(0).getIndividualFolder(3).addToFileList(".htrouter.php");
         demo1.getIndividualFolder(0).getIndividualFolder(3).addToFileList("index.html");
-        demo1.structurePrintout();
         //Code to Remove app Folder
-//        demo1.getIndividualFolder(0).removeIndividualFolder(1);
+        demo1.getIndividualFolder(0).removeIndividualFolder(1);
         //Code to Remove public Folder
 //        demo1.getIndividualFolder(0).removeIndividualFolder(3);
+        demo1.structurePrintout();
 
     }
 }
