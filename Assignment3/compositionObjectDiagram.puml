@@ -1,0 +1,78 @@
+@startuml
+
+object "demo1: Folder" as demo1
+object "Source Files: Folder" as source
+object "Include Path: Folder" as include_path
+object "Remote Files: Folder" as remote_files
+object ".phalcon: Folder" as phalcon
+object ".cache: Folder" as cache
+object "public: Folder" as public
+object ".htaccess: File" as htaccess
+object ".htrouter.php: File" as htrouter
+object "index.html: File" as index
+
+demo1 *-- source
+demo1 *-- include_path
+demo1 *-- remote_files
+source *-- phalcon
+source *-- cache
+source *-- public
+public *-- htaccess
+public *-- htrouter
+public *-- index
+
+object demo1 {
+    name = "demo1"
+    subfolders = ["Source Files", "Include Path", "Remote Files"]
+    files = []
+}
+
+object source {
+    name = "Source Files"
+    subfolders = [".phalcon", ".cache", "public"]
+    files = []
+}
+
+object include_path {
+    name = "Include Path"
+    subfolders = []
+    files = []
+}
+
+object remote_files {
+    name = "Remote Files"
+    subfolders = []
+    files = []
+}
+
+object phalcon {
+    name = ".phalcon"
+    subfolders = []
+    files = []
+}
+
+object cache {
+    name = ".cache"
+    subfolders = []
+    files = []
+}
+
+object public {
+    name = "public"
+    subfolders = []
+    files = [".htaccess", ".htrouter.php", "index.html"]
+}
+
+object htaccess {
+    name = ".htaccess"
+}
+
+object htrouter {
+    name = ".htrouter.php"
+}
+
+object index {
+    name = "index.html"
+}
+
+@enduml

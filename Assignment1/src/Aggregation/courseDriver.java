@@ -12,8 +12,8 @@ public class courseDriver {
         oneInstructor.setCourseName("CS5800 Advance Software Engineering");
         oneInstructor.setInstructor(nima);
         oneInstructor.setTextbook(cleanCode);
-        oneInstructor.setInstructor(yu);
-        oneInstructor.setTextbook(designPattern);
+//        oneInstructor.setInstructor(yu);
+//        oneInstructor.setTextbook(designPattern);
         System.out.println(oneInstructor);
 
     }
