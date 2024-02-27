@@ -1,8 +1,8 @@
 @startuml
 
-object "nima: Instructor" as instructor
-object "cleanCode: Textbook" as textbook
-object "oneInstructorCourse: Course" as course
+object "<u>nima: Instructor</u>" as instructor
+object "<u>cleanCode: Textbook</u>" as textbook
+object "<u>oneInstructorCourse: Course</u>" as course
 
 course  o--  instructor
 course  o--  textbook

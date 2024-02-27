@@ -1,8 +1,8 @@
 @startuml
 
 
-Folder "0" --> "*" Folder
-Folder "0" --> "*" File
+Folder "0" *-- "*"File
+Folder "0"*-- "*"Folder
 
 class File {
     - name: String
