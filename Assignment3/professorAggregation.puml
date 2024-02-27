@@ -1,5 +1,9 @@
 @startuml
 
+class Course
+class Instructor
+class Textbook
+
 Course "1" o-- "*" Instructor
 Course "1" o-- "*" Textbook
 

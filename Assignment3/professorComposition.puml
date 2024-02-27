@@ -1,5 +1,7 @@
 @startuml
 
+class File
+class Folder
 
 Folder "0" *-- "*"File
 Folder "0"*-- "*"Folder
