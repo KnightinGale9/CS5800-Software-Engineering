@@ -2,19 +2,18 @@ package Factory;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-public class Fats extends Macronutrient{
-    private static Fats fats=null;
+public class Fats extends FoodGroups {
+    private static Fats instance =null;
 
     private Fats(){
         super.validFood = new HashSet<>(List.of("Avocado","Sour Cream","Tuna","Peanuts"));
     }
-    public static Fats singleton(){
-        if(fats==null)
+    public static Fats getInstance(){
+        if(instance ==null)
         {
-            fats=new Fats();
+            instance =new Fats();
         }
-        return fats;
+        return instance;
     }
 }

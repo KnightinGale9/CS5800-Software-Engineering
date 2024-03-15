@@ -2,19 +2,18 @@ package Factory;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
-public class Protein extends Macronutrient{
-    private static Protein protein;
+public class Protein extends FoodGroups {
+    private static Protein instance;
     private Protein(){
         super.validFood = new HashSet<>(List.of("Fish","Chicken","Beef","Tofu"));
     }
-    public static Protein singleton(){
-        if(protein==null)
+    public static Protein getInstance(){
+        if(instance ==null)
         {
-            protein=new Protein();
+            instance =new Protein();
         }
-        return protein;
+        return instance;
     }
 
 }

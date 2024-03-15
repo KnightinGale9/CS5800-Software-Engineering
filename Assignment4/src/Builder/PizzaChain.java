@@ -6,9 +6,11 @@ public abstract class PizzaChain {
     public PizzaChain(String chainName){
         this.chainName=chainName;
     }
-    public void makePizza(String size,String[] toppings){}
     protected void setPizza(Pizza pizza){
         this.pizza=pizza;
+    }
+    public void makePizza(String size,String[] toppings){
+        this.pizza = new PizzaBuilder().setPizzaSize(size).addAllToppings(toppings).createPizza();
     }
     public void eat(){
          System.out.printf("%s: %s\n",chainName,pizza.toString());
