@@ -7,11 +7,8 @@ public class Pistachio  extends Carbs{
     @Override
     public boolean validDiets(String diet){
         switch (diet){
-//            case "NoRestriction":
-//            case "NutAllergy":
-//            case "Paleo":
-//            case "Vegan":
-//                return true;
+            case "NutAllergy":
+                return false;
             default:
                 return true;
         }

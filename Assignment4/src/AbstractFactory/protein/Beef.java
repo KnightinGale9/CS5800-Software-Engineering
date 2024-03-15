@@ -8,10 +8,6 @@ public class Beef extends Protein{
     @Override
     public boolean validDiets(String diet){
         switch (diet){
-//            case "NoRestriction":
-//            case "NutAllergy":
-//            case "Paleo":
-//                return true;
             case "Vegan":
                 return false;
             default:

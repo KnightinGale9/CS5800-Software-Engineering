@@ -7,10 +7,6 @@ public class Lentils  extends Carbs{
     @Override
     public boolean validDiets(String diet){
         switch (diet){
-//            case "NoRestriction":
-//            case "NutAllergy":
-//            case "Vegan":
-//                return true;
             case "Paleo":
                 return false;
             default:

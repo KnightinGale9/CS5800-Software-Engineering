@@ -7,11 +7,8 @@ public class Cheese extends Carbs{
     @Override
     public boolean validDiets(String diet){
         switch (diet){
-//            case "NoRestriction":
-//            case "NutAllergy":
-//            case "Vegan":
-//                return true;
             case "Paleo":
+            case "Vegan":
                 return false;
             default:
                 return true;
