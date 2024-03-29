@@ -6,7 +6,6 @@ public abstract class FoodToppings implements Food {
     protected Food tempFood;
     public FoodToppings(Food food){
         this.tempFood = food;
-        tempFood.
     }
 
     @Override
